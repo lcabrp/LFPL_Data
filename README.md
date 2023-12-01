@@ -108,4 +108,3 @@ The following criteria have been met with this project:
 3. Visualize / Present your data
 4. Best practices
     Virtual environment included.
->>>>>>> Stashed changes
