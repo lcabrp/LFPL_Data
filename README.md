@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 Readme.md
 Readme.md
 
@@ -59,3 +60,52 @@ The following criteria have been met with this project:
 
 7. Every step of the process is documented in the Jupyter notebooks
 
+=======
+# About
+This is a project for Code Louisville's Data Analysis Course - May 2023 .
+
+# Overview
+
+For this project, we'll use data from the Louisville Free Public Library, specifically the books dataset.
+ Some analysis will be done with the data, and will use API call to fill out part of the missing data.
+
+# Running the Program
+
+Python 3 is required to run this program. 
+
+If you need to download or update Python, go to www.python.org
+
+Main Program
+
+Download the repo company_data or clone and save to location of your choice on your machine.
+
+Recommended: Create a virtual environment to run the program.
+
+Run the requirements from the root LFPL_Data folder:
+
+Most Systems: pip install -r requirements.txt or pip3 install -r requirements.txt
+
+If these aren't working for you, try the following:
+
+CONDA: conda install --file requirements.txt
+
+Windows: py -m pip install -r requirements.txt
+
+Unix/macOS: python -m pip install -r requirements.txt
+
+If you do not have Anaconda installed, make sure to enter the following commands in your command line once you've navigated to the repo folder:
+
+pip install pandas
+
+# Code Louisville Requirements
+The following criteria have been met with this project:
+
+1. Loading data
+   A csv file will be loaded into a Pandas dataframe. Some data cleaning is performed on the original dataframe. Using the 
+   Open Library API, some of the missing values will be obtained.
+2. Clean and operate on the data while comining them
+    The two datsets will be merge.
+3. Visualize / Present your data
+4. Best practices
+    Virtual environment included.
+>>>>>>> Stashed changes
