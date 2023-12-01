@@ -29,10 +29,13 @@ The following is a guide to running the project files locally:
 1.  Fork the repository  [repo link](https://github.com/lcabrp/LFPL_Data) 
 2.  Clone the repository to your Github account
 3.  Access the repository from your command line or preferred terminal software
-4.  Install a virtual environment. The command in Gitbash is  _python -m venv venv_
-5.  Activate the virtual environment. The command in Gitbash is  _source venv/scripts/activate_. On Unix like systems use source venv/bin/activate .
+4.  Install a virtual environment. The command in Gitbash is  python -m venv venv_
+5.  Activate the virtual environment. The command in Gitbash is  source venv/scripts/activate. On Unix like systems use source venv/bin/activate .
 6.  Install the  requirements.txt file to install necessary packages by running  pip install requirements.txt
-  
+
+There are 2 jupyter notebooks on the repo. On the first one, analysis.ipynb, the data preparation takes place.
+
+On the second one, visuals.ipynb, is where the diagrams and graphs are created.
 
 # Code Louisville Requirements
 
