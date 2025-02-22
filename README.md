@@ -13,20 +13,17 @@ This is a project for Code Louisville's Data Analysis Course - May 2023 .
 
 For this project, we'll use data from the [Louisville Free Public Library](https://data.louisvilleky.gov/datasets/louisville-metro-ky-library-collection-inventory/about), specifically the books dataset. 
 
-Some analysis will be done with the data, and will use API calls to fill out part of the missing data.
-
+Some analysis will be performed with the data, and will use API calls to fill out part of the missing data.
   
 
 # Running the Program
 
-You will need Python 3 to run this code. The scripts were tested with Python 3.11.6 .If you need to download or update Python, go to [www.python.org](www.python.org). If you are in a Windows 10 or 11 environment, you can  [Download Python from Microsoft Store](https://apps.microsoft.com/detail/python-3-11/9NRWMJP3717K?hl=en-US).
-.
+You will need Python 3 to run this code. The scripts were tested with Python 3.11.6 . If you need to download or update Python, go to [www.python.org](www.python.org). If you are in a Windows 10 or 11 environment, you can  [Download Python from Microsoft Store](https://apps.microsoft.com/detail/python-3-11/9NRWMJP3717K?hl=en-US).
 
 You will need to use Jupyter notebooks too. You can download it [here](https://jupyter.org/install),  use [Visual Studio Code](https://code.visualstudio.com/), or the environment of your choice.
 
-The following is a guide to running the project files locally:
- Further instructions can be found on [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
- .
+The following is a guide to running the project files locally. Further instructions can be found on [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
+ 
 1.  Fork the repository  [repo link](https://github.com/lcabrp/LFPL_Data) 
 2.  Clone the repository to your Github account
 3.  Access the repository from your command line or preferred terminal software
