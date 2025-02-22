@@ -20,7 +20,7 @@ You will need to use Jupyter notebooks too. You can download it [here](https://j
 
 The following is a guide to running the project files locally. Further instructions can be found on [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
  
-1.  Fork the repository  [repo link](https://github.com/lcabrp/LFPL_Data) 
+1.  Fork the [repository](https://github.com/lcabrp/LFPL_Data) 
 2.  Clone the repository to your Github account.
 3.  Access the repository from your command line or preferred terminal software.
 4.  Install a virtual environment. The command in Gitbash is  python -m venv venv.
