@@ -20,12 +20,12 @@ You will need to use Jupyter notebooks too. You can download it [here](https://j
 
 The following is a guide to running the project files locally. Further instructions can be found on [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
  
-1.  Fork the [repository](https://github.com/lcabrp/LFPL_Data) 
+1.  Fork the [repository.](https://github.com/lcabrp/LFPL_Data) 
 2.  Clone the repository to your Github account.
 3.  Access the repository from your command line or preferred terminal software.
-4.  Install a virtual environment. The command in Gitbash is  python -m venv venv.
-5.  Activate the virtual environment. The command in Gitbash is  source venv/scripts/activate. On Unix like systems use source venv/bin/activate.
-6.  Install the  requirements.txt file to install necessary packages by running  pip install requirements.txt.
+4.  Install a virtual environment. The command in Gitbash is python -m venv venv.
+5.  Activate the virtual environment. The command in Gitbash is source venv/scripts/activate. On Unix like systems use source venv/bin/activate.
+6.  Install the  requirements.txt file to install necessary packages by running pip install requirements.txt.
 
 There are 2 jupyter notebooks on the repo. On the first one, analysis.ipynb, the data preparation takes place.
 
@@ -35,11 +35,11 @@ On the second one, visuals.ipynb, is where the diagrams and graphs are created.
 
 The following criteria have been met with this project:
 
-1. Loading data
+1. Loading data.
 
   A csv file will be loaded into a Pandas dataframe. Some data cleaning is performed on the original dataframe. Using  APIs, a second csv file is created to enrich the original data source.
 
-2. Clean and operate on the data while combining them
+2. Clean and operate on the data while combining them.
 
   The two datasets will be merge to enrich the original one.
 
@@ -51,7 +51,5 @@ The following criteria have been met with this project:
 
    Virtual environment used.
 
-7. Every step of the process is documented in the Jupyter notebooks
-
-=======
+7. Every step of the process is documented in the Jupyter notebooks.
 
