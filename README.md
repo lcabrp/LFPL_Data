@@ -26,10 +26,11 @@ The following is a guide to running the project files locally. Further instructi
 4.  Install a virtual environment. The command in Gitbash is python -m venv venv.
 5.  Activate the virtual environment. The command in Gitbash is source venv/scripts/activate. On Unix like systems use source venv/bin/activate.
 6.  Install the  requirements.txt file to install necessary packages by running pip install requirements.txt.
+    *   **Note**: The `requirements.txt` file in this project was initially UTF-16 encoded and has been corrected to UTF-8 for compatibility.
 
-There are 2 jupyter notebooks on the repo. On the first one, analysis.ipynb, the data preparation takes place.
-
-On the second one, visuals.ipynb, is where the diagrams and graphs are created.
+There are 2 jupyter notebooks on the repo. 
+- On the first one, `analysis.ipynb`, the data preparation takes place.
+- On the second one, `visuals.ipynb`, is where the diagrams and graphs are created.
 
 # Code Louisville Requirements
 
@@ -37,19 +38,36 @@ The following criteria have been met with this project:
 
 1. Loading data.
 
-  A csv file will be loaded into a Pandas dataframe. Some data cleaning is performed on the original dataframe. Using  APIs, a second csv file is created to enrich the original data source.
+  - A csv file is loaded into a Pandas dataframe from the LFPL Open Data website.
+  - Initial data cleaning is performed on the original dataframe. This includes:
+    - Filtering out non-book items (e.g., items with "Laptop" as title).
+    - Removing irrelevant item collections (e.g., 'Listening Device', 'Magazines and Newspaper', 'Adult DVD').
+    - Handling missing `Title` values by dropping rows where the title is not available.
+  - Using APIs (OpenLibrary and Google Books), a second dataset (`openlib_data.csv` and subsequently `book_info_updated.csv`) is created to enrich the original data source, specifically for missing `Author` and `ISBN` information.
+  - Intermediate and final cleaned/enriched datasets are saved as compressed CSV files (`lfpl_books.csv.gz`, `lfpl_new.csv.gz`).
 
 2. Clean and operate on the data while combining them.
 
-  The two datasets will be merge to enrich the original one.
+  - The `ISBN` column is converted to a string type, and 'nan' string values are replaced with empty strings for consistency.
+  - The original dataset is merged with the data obtained from APIs to fill in missing `Author` and `ISBN` values.
+  - API functions (`get_open_library_data`, `get_google_books_data`) in `analysis.ipynb` were refactored for robust error handling (network issues, JSON decoding, missing keys, and API rate limits with retries).
+  - Configuration variables for file paths and API URLs were added to `analysis.ipynb` for better maintainability.
 
 3. Visualize / Present your data
 
-   Matplotlib and seaborn are used to visualize the data.
+   - Matplotlib and seaborn are used in `visuals.ipynb` to visualize the data.
+   - Visualizations include:
+     - Distribution of publication years (histogram and bar chart of top 5 years), with filtering for erroneous year data.
+     - Average item prices by item collection (bar chart).
+     - Distribution of book counts by library location (pie chart with grouping for small slices and horizontal bar plot).
+   - These visualizations help in understanding the library's collection composition, age, pricing structure, and distribution across branches.
+   - Explanatory markdown cells were added to `visuals.ipynb` to introduce the notebook, clarify data filtering steps, interpret each plot, and suggest further visualization ideas.
 
 5. Best practices
 
-   Virtual environment used.
+   - Virtual environment used.
+   - Code includes error handling, particularly for API calls.
+   - Configuration variables are used for paths and URLs.
 
 7. Every step of the process is documented in the Jupyter notebooks.
-
+   - Markdown cells were added to `analysis.ipynb` and `visuals.ipynb` to explain data processing steps, API call efficiency, and visualization insights.
