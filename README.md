@@ -28,7 +28,7 @@ The following is a guide to running the project files locally. Further instructi
 6.  Install the  requirements.txt file to install necessary packages by running pip install requirements.txt.
     *   **Note**: The `requirements.txt` file in this project was initially UTF-16 encoded and has been corrected to UTF-8 for compatibility.
 
-There are 2 jupyter notebooks on the repo. 
+There are 2 jupyter notebooks on the repo.
 - On the first one, `analysis.ipynb`, the data preparation takes place.
 - On the second one, `visuals.ipynb`, is where the diagrams and graphs are created.
 
